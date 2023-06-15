@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap");
+
+:root{
+    --mainColor:#64bcf4;
+    --hoverColor:#64bcf4;
+    --backgroundColor: #ABA1C6;
+    --darkOne: #312f34;
+    --darkTwo:#45424d;
+    --lightOne:hsl(0, 29%, 95%);
+    --lightTwo:#ffea00;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppings', sans-serif;
+    background-color: var(--backgroundColor);
+}
+header{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background: var(--backgroundColor);
+}
+label.logo{
+        width: 120px;
+        margin-left: 2.0rem;
+        margin-top: -0.6rem;
+}
+.logo img{
+    width: 130px;
+    height: 85px;
+}
+nav ul{
+    float: right;
+    margin-right: 8rem;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:var(--lightTwo);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background:darkorange;
+    transition: .5s;
+    border-radius: 6px;
+    padding: 3px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+    padding: 0;
+}
+.image_container{
+ margin: 0;
+ padding: 0;
+}
+.image_container img{
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+.image_text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+}
+.image_text  h1 {
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffea00;
+    background: url("images/back.png");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    margin-top: 4%;
+}
+@keyframes back{
+    100%{
+        background-position: 200px 0;
+    }
+}
+.image_text  p{
+    color: antiquewhite;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+.image_container #btn{
+    width: 12rem;
+    height: 5rem;
+    padding: 20px;
+    background: red;
+    border-radius: 8px;
+    box-shadow: #45424d;
+    margin-right: 85%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.image_container #btn a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.image_container #btn:hover{
+    background: #64bcf4;
+    text-decoration: none;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    margin-top:-50px;
+    height: 75vh;
+    padding: 8vw;
+    background-color: #312f34;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer .footer-col{
+    padding-bottom: 40;
+}
+footer h3{
+    color: rgb(240, 232, 240);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color: #9996a0;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+footer li:hover{
+color: rgb(240, 232, 240);
+}
+footer p{
+    color: #9996a0;
+}
+footer a{
+    text-decoration: none;
+}
+footer.subscribe{
+    margin-top: 20px;
+}
+footer input{
+    width: 220px;
+    padding: 12px 15px;
+    background-color:goldenrod;
+    border: none;
+    outline: none;
+    color: white;
+
+}
+footer .subscribe a{
+   
+    display:inline-block;
+    padding: .9rem 1.9rem;
+    color: white !important;
+    background-color: rgb(240, 62, 62);
+    text-transform: capitalize;
+    border-radius: 16px;
+    
+}
+footer .subscribe a:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1) !important;
+
+}
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+footer .copyright p{
+    color: white;
+}
+.pro-links{
+    margin-top: 10px;
+}
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(23, 24, 94);
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+h9{
+    color: white;
+}
+.pro-links i:hover {
+background:rgb(23, 24, 94);
+color: white;
+border: 1px solid rgb(23, 24, 94);
+cursor: pointer;
+}
+
+
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+  .header{
+    position: relative;
+  }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 9999;
+    }
+    nav ul li{
+        display: block;
+        margin: 60px 0;
+        line-height: 30px;
+        padding: 10px;
+    }
+    nav ul li a{
+        font-size: 22px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    .image_text  h1 {
+        font-size: 40px;
+        margin-top: 20%;
+    }
+    .image_text  p{
+        font-size: 1.1rem;
+        margin: 5px;
+        margin-top: 45%;
+    }
+    .image_container #btn{
+        width: 6rem;
+        height: 2rem;
+        padding: 5px;
+        border-radius: 8px;
+        margin-bottom: 3px;
+        margin-top: 15%;
+    }
+    .image_container #btn a{
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+    .image_container img{
+        width: 100%;
+        height: 120vh;
+    }
+    footer{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    footer li{
+        padding: 2px;
+        margin: 10px;
+    }
+    footer h3,
+    footer input,
+    .copyright p,h9{
+        padding:2px;
+        margin: 10px;
+    }
+    footer input{
+        height:35px ;
+    }
+    
+
+
+}
+
+            
